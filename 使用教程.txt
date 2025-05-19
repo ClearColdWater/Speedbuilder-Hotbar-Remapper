@@ -1,0 +1,23 @@
+阅读本文前请先阅读 README .
+
+在使用 Speedbuilder Hotbar Remapper 之前，请先确保电脑上安装了任何版本的 AutoHotkey. 
+若没有安装，可以在根目录下的 autohotkey_installer 文件夹中找到 AutoHotkey 的安装包
+AutoHotkey_2.0.19_setup.exe, 双击运行并根据提示完成安装即可. 
+
+完成 AutoHotkey 的安装之后, 根据 README 中的提示对 build-key-table.cfg 自行配置或
+将从他人处获得的版本放在脚本根目录下. 双击 speedbuilder-hotbar-remapper.exe 运行, 
+根据提示完成初始化配置. 
+
+打开你想要修改方块键位的记忆速建服务器, 脚本应该在每识别到一个建筑名时提示: 
+"识别到建筑:xxx" 或 "未找到建筑:xxx". 若未找到的建筑名明显不是建筑, 可以直接忽略. 
+若确实有建筑正在游戏中而提示未找到, 是 build-key-table.cfg 中未找到相应名字的建筑, 
+若有需要可以自行对其进行配置. 若有建筑正在游戏中而无提示, 查看你是否在脚本控制台
+界面选中了字符导致脚本暂停运行, 若是, 可单击回车键恢复运行; 否则脚本未检测到建筑, 可
+在 config.cfg 中检查是否填写错了日志地址. 
+
+若脚本正确检测到建筑但未作出动作, 可能是以下原因: 
+1. build-key-table.cfg 中的键位重映射不正确. 检查该建筑的键位重映射编码是否符合 
+README 中的要求. 
+2. (若有残余的方块在副手) 间隔串的长度对于你的计算机可能太短. 尝试在 config.cfg 中将 filler_string 关键字
+中 'a' 的数量增加并保存重启脚本. 
+3. AutoHotkey 没有被正确安装. 
