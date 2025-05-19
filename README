@@ -1,24 +1,27 @@
-Speedbuilder Hotbar Remapper 是一个为修改我的世界游戏记忆速建键位制作的宏脚本，
-使用 AutoHotkey 根据识别到的建筑动态创建重映射或直接使用副手交换快捷栏中的方块，
-达到在游戏开始前任意修改键位的目的。
+Speedbuilder Hotbar Remapper 是一个为修改我的世界游戏记忆速建键位制作的宏脚本, 
+使用 AutoHotkey 根据识别到的建筑动态创建重映射或直接使用副手交换快捷栏中的方块, 
+达到在游戏开始前任意修改键位的目的.
 
-Speedbuilder Hotbar Remapper 需要依赖建筑键位重映射表 build-key-table.cfg 工作。
-Speedbuilder Hotbar Remapper 本身默认不提供任何服务器的键位重映射表。
-你可以自行制作或从他人处获取所需要的服务器键位重映射表。
-键位重映射表每行的格式如下（不包含中括号）：
-[建筑名]:[纯数字串，每个数字代表重映射后该位置的方块是映射前哪个快捷栏位置的方块]
-例如，现有建筑 向阳面煎蛋，
-其现有键位为 1:石英半砖 2:黄色陶瓦 3:青色陶瓦，
-目标键位为 1:青色陶瓦 2: 石英半砖 3:黄色陶瓦
-目标键位1位置的方块映射前位于3位置，
-目标键位2位置的方块映射前位于1位置，
-目标键位3位置的方块映射前位于2位置，
+Speedbuilder Hotbar Remapper 需要依赖位于软件根目录下的
+建筑键位重映射表 build-key-table.cfg 工作.
+Speedbuilder Hotbar Remapper 本身默认不提供任何服务器的键位重映射表. 
+你可以自行制作或从他人处获取所需要的服务器键位重映射表. 
+键位重映射表每行的格式如下 (不包含中括号) : 
+[建筑名]:[纯数字串, 每个数字代表重映射后该位置的方块是映射前哪个快捷栏位置的方块]
+例如, 现有建筑 向阳面煎蛋, 
+其现有键位为 1: 石英半砖 2: 黄色陶瓦 3: 青色陶瓦, 
+目标键位为 1: 青色陶瓦 2: 石英半砖 3: 黄色陶瓦
+目标键位1位置的方块映射前位于3位置, 
+目标键位2位置的方块映射前位于1位置, 
+目标键位3位置的方块映射前位于2位置, 
 则应该在建筑键位重映射表中添加如下的一行：
 向阳面煎蛋:312
 
-Speedbuilder Hotbar Remapper 目录下的 autohotkey_installer 目录中带有 AutoHotkey 
-的安装包，由于 Speedbuilder Hotbar Remapper 依赖 AutoHotkey 工作，你需要先下载
-AutoHotkey.
+由于 Speedbuilder Hotbar Remapper 依赖 AutoHotkey 工作, 你需要先安装
+AutoHotkey. Speedbuilder Hotbar Remapper 目录下的 
+autohotkey_installer 目录中带有 AutoHotkey 的安装包. 
 
-Speedbuilder Hotbar Remapper 目前只能在中文版本的记忆速建中工作；利用副手交换运行的
-模式只能在拥有记忆阶段给予方块功能的服务器工作。
+更详细的使用教程请查看同一目录下的 使用教程.txt .
+
+Speedbuilder Hotbar Remapper 目前只能在中文版本的记忆速建中工作; 利用副手交换运行的
+模式只能在记忆阶段就给予方块的记忆速建服务器工作. 
